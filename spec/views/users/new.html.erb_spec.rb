@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "users/new" do
   before(:each) do
-    assign(:user, stub_model(User,
+    assign(:user, mock_model(User,
       :first_name => "MyString",
       :last_name => "MyString",
       :email => "MyString",
