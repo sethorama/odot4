@@ -3,8 +3,7 @@ require "spec_helper"
 describe "Logging In" do
   it "logs the user in and goes to the todo lists" do
     User.create(first_name: "Jason", last_name: "Seifer", email: "jason@teamtreehouse.com", password: "treehouse1", password_confirmation: "treehouse1")
-    visit "/"
-    click_link "Sign In"
+    visit "/login"
     fill_in "Email Address", with: "jason@teamtreehouse.com"
     fill_in "Password", with: "treehouse1"
     click_button "Sign In"
