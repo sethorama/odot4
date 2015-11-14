@@ -21,6 +21,10 @@ RSpec.configure do |config|
   config.include AuthenticationHelpers::Controller, type: :controller
   config.include AuthenticationHelpers::Feature, type: :feature
 
+  # Remove deprication warning for "no longer automatically infer an example group's spec type"
+
+  config.infer_spec_type_from_file_location!
+
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
